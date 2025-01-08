@@ -51,6 +51,14 @@
     cursor: pointer;
 }
 
+.btn-primary:hover{
+    background-color: transparent;
+    border: 2px solid #181818;
+    border-radius: 5px;
+    color: #181818;
+    transition: all ease-in-out 0.3s;
+}
+
 .section-title{
     font-size: 35px;
     font-weight: bold;
