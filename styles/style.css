@@ -101,8 +101,8 @@ nav li a {
   font-size: 20px;
 }
 
-nav li a:hover{
-    color: rgb(253, 110, 10);
+nav li a:hover {
+  color: rgb(253, 110, 10);
 }
 
 .hover-line::after {
@@ -114,8 +114,8 @@ nav li a:hover{
   transition: width 0.3;
 }
 
-.hover-line:hover::after{
-    width: 100%;
+.hover-line:hover::after {
+  width: 100%;
   transition: width 0.3s;
 }
 
@@ -273,4 +273,50 @@ footer textarea {
   margin-bottom: 24px;
   border: none;
   padding: 18px 50px 18px 30px;
+}
+
+/* responsive media query */
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .skills-container,
+  .resume-container,
+  footer, .about-items, .banner, nav, nav > ul {
+    flex-direction: column;
+  }
+
+  .header{
+    background-image: none;
+  }
+
+  .banner, nav{
+    margin: 0;
+  }
+
+  .banner-profile-pic{
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  footer, .about {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .footer-column {
+    width: 100%;
+  }
+
+  footer input[type="text"],
+  footer input[type="email"],
+  footer textarea {
+    padding: 0;
+  }
+
+  .responsive-btn{
+    margin-left: 120px;
+  }
 }
